@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="NewsMasterPage.master.cs"
+    Inherits="NewsMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>NEWS新闻网</title>
+    <link href="StyleCss\News.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .table1
+        {
+            width: 100%;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="container">
+        <!--页面层容器-开始-->
+        <div id="top">
+            <div id="top-left">
+                <a href="HomeNews.aspx">欢迎光临"NEWS新闻网"</a></div>
+            <div id="top-right">
+                <a href="UserLogin.aspx" style="text-decoration: underline">登录</a>&nbsp;&nbsp;<a 
+                    href="UserRegister.aspx" style="text-decoration: underline">免费注册</a></div>
+        </div>
+        <div id="header">
+        </div>
+        <div id="nav">
+            <table cellpadding="0" cellspacing="0" class="table1">
+                <tr>
+                    <td>
+                        | &nbsp;<a href="HomeNews.aspx">首页</a>
+                        <asp:Repeater ID="repNewsCategory" runat="server">
+                            <ItemTemplate>
+                                |&nbsp;<a href="NewsCategory.aspx?id=<%#Eval("NewsCategoryID") %>"><%#Eval("NewsCategoryName") %></a>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                        |&nbsp;<a href="About.aspx">关于本网</a> |
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="content">
+            <!--页面主体-开始-->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <!--页面主体-结束-->
+        </div>
+        <div id="footer">
+            Copyright 2019-2020 版权所有&nbsp;<a href="Admin\HomeAdmin.aspx" 
+                style="text-decoration: underline">后台管理</a><br />
+            地址：中国•广州
+        </div>
+        <!--页面层容器-结束-->
+    </div>
+    </form>
+</body>
+</html>

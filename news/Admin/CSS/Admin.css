@@ -1,0 +1,333 @@
+﻿/*注册页面的CSS*/
+/*《ASP.NET数据库网站设计教程（C#版）第2版》配套教学资源-刘瑞新主编-电子工业出版社2015.1 */
+
+/*总体设置*/
+/*基本信息*/
+body
+{
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 宋体;
+    background: :red;
+    margin: 0px; /*上右下左边距为0像素*/
+    padding: 0;
+}
+
+/*页面层容器*/
+#container
+{
+    width: 965px;
+    margin: 0 auto;
+}
+
+/*页面头部Logo*/
+#header
+{
+    height: 80px;
+    background: yellow;
+    background: url('../Images/banner.jpg') no-repeat; /*加入标题中的背景图片*/
+}
+/*导航区*/
+#nav
+{
+    width: 960px;
+    height: 22px;
+    text-align: left;
+    padding: 5px 0px 0px 0px;
+    color: White;
+    background-image: url('../Images/nav_bg.jpg');
+}
+#nav a
+{
+    color: White;
+    text-decoration: none;
+}
+/*您现在的位置,眉毛*/
+#breadcrumb
+{
+    width: 780px;/*960-180=780 */
+    line-height: 20px;
+    text-align: left;
+    margin: 0px;
+    background-color: #d6e9fc; /* 背景色为淡栏色*/
+    padding-left: 180px;
+}
+#breadcrumb a
+{
+    text-decoration: underline; /*有下划线*/
+}
+/*页面主体*/
+/*主体部分的外框*/
+#content
+{
+    width: 960px;
+    float: left; /*非常重要，不可少。缺少则造成其包含的DIV块不能包含在本块中*/ /* clear: both;*/
+    height: 500px; /*最少高度*/
+}
+/*左侧栏*/
+#left-sidebar
+{
+    float: left; /*浮动居左*/
+    width: 180px; /*左栏宽度*/
+    height: 500px; /*不能省略*/
+    background: #d6e9fc;
+}
+/*主要内容，用于Default.hml*/
+#right-main
+{
+    float: left; /*浮动居右*/ /*clear: right; 不允许右侧存在浮动*/
+    width: 779px; /*设定宽度*/
+    padding: 0;
+    background: #e7f2fd;
+    text-align: center; /*本块中的内容居中*/
+    height: 498px;
+    margin: 0px;
+}
+
+/*页面底部*/
+#footer
+{
+    clear: both;
+    padding: 5px 0px 5px 0px;
+    background-image: url('../Images/foot_bg.jpg');
+    text-align: center;
+    width: 960px;
+}
+
+/*--------------------------------------------------*/
+
+
+/*左侧栏目-------------------开始*/
+/*导航区*/
+.treeview
+{
+    width: 100%;
+    height: 430px;
+    text-align: center;
+    margin: 0px;
+    padding: 0;
+}
+/*显示已经登录的管理员区*/
+.logined
+{
+    width: 100%;
+    margin: 0px auto; /*居中*/
+    padding: 0;
+    text-align: center;
+}
+/*左侧栏目-------------------结束*/
+
+/*右侧框架的大小*/
+#right-frame
+{
+    height: 99%;
+    width: 100%;
+}
+/*右侧框架页中的内容*/
+#right-frame-content
+{
+    width: 771px; /*设定居中元素的宽度*/
+    margin: 10px auto;
+    height: 479px;
+}
+/*后台内容的标题*/
+.center-title
+{
+    height: 35px;
+    width: 758px; /*设定居中元素的宽度*/
+    text-align: center;
+    font-weight: bold;
+    line-height: 35px; /*单行垂直居中,只需要设置它的实际高度height和所在行的高度line-height相等即可*/
+    overflow: hidden; /*设置是为了防止内容超出容器或者产生自动换行*/
+    margin-top: 0px auto;
+}
+
+/*后台表格*/
+/*表格居中*/
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/*后台表格的第一种样式t1*/
+table.t1
+{
+    border: 1px solid #cad9ea;
+    color: #666;
+    width: 98%;
+}
+table.t1 th
+{
+    height: 30px;
+    text-align: center;
+    background-color: #f5fafe;
+}
+table.t1 td, table.t1 th
+{
+    border: 1px solid #cad9ea;
+    padding: 0 1em 0;
+    text-align: center;
+}
+table.t1 tr.alt
+{
+    background-color: #f5fafe;
+}
+/*后台表格的第二种样式t1*/
+table.t2
+{
+    border: 1px solid #cad9ea;
+    color: #666;
+}
+table.t2 th
+{
+    height: 30px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #EAF6FF;
+    border: 1px #A2D8FF;
+}
+table.t2 td
+{
+    background-color: #FBFDFF;
+    border: 1px solid #c3e0f5;
+}
+/*单元格内容居右*/
+.tdright
+{
+    width: 30%;
+    text-align: right;
+}
+/*单元格内容居左*/
+.tdleft
+{
+    text-align: left;
+}
+
+
+select, input
+{
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 宋体; /*上右下左边距为0像素*/
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+img
+{
+    border: 0;
+    vertical-align: middle;
+}
+a
+{
+    color: #0072A7;
+    text-decoration: underline;
+}
+a:hover
+{
+    color: #f00;
+}
+
+.table_style
+{
+    width: 99%;
+    font-size: 14px;
+    height: 497px;
+}
+
+/*表格头*/
+.table_header
+{
+    font-size: 14px;
+    font-weight: bolder;
+    color: blue;
+    text-align: center;
+}
+/*表格左侧列，占总共表格宽度的35%，居右*/
+.td_left
+{
+    text-align: right;
+}
+
+/*表格的右侧列，占总共表格宽度的65%，居左*/
+.td_right
+{
+    width: 65%;
+    text-align: left;
+}
+
+.button
+{
+    font-size: 12px;
+}
+
+/*验证控件*/
+.ctrler
+{
+    font-size: 12px;
+    color: #FF0000;
+}
+/*居中*/
+.center
+{
+    text-align: center;
+}
+
+.line1
+{
+    font-size: 12px;
+    color: #000000;
+    background-color: #f5fafe;
+    border: 1px solid #A2D8FF;
+    text-align: left;
+}
+.line2
+{
+    font-size: 12px;
+    background-color: #FBFDFF;
+    border: 1px solid #c3e0f5;
+    text-align: left;
+}
+.line3
+{
+    background-color: #FBFDFF;
+    border: 1px solid #c3e0f5;
+    line-height: 25px;
+}
+
+
+/*数据控件*/
+.data_table
+{
+    margin: 0 auto;
+    border: 2px solid #999;
+    width: 99%;
+}
+.data_table td, .data_table th
+{
+    border: groove #A29C9E;
+    border-width: 0 1px;
+    font: 14px/24px 宋体;
+}
+.data_table th
+{
+    background: url(../images/date_th.gif) repeat-x;
+    line-height: 30px;
+    border-bottom: 1px solid #fff;
+    font-weight: 600;
+    color: Black;
+}
+.data_table td
+{
+    text-align: center;
+    padding: 10px 2px 8px 2px;
+}
+.data_table td.name
+{
+    text-align: left;
+}
+

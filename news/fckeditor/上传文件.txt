@@ -1,0 +1,24 @@
+<appSettings>
+<add key="FCKeditor:UserFilesPath" value="/tt/UserFiles/"/>
+<!--tt代表您的Web專案名稱-->
+</appSettings> 
+
+  <appSettings>
+    <add key="FCKEditor:BasePath" value="/News/fckeditor/"/>
+    <add key="FCKeditor:UserFilesPath" value="/News/UserUpload/"/>
+
+  </appSettings>
+  <system.web>
+    <httpRuntime requestValidationMode="2.0" />
+  </system.web>
+
+<system.web>
+    <pages validateRequest="false" />
+  </system.web>
+或者
+
+validateRequest="false" 
+
+<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/MasterPageAdmin.master" AutoEventWireup="true"  CodeFile="NewsAddFckeditor.aspx.cs" Inherits="Admin_NewsAddFckeditor" validateRequest="false" %>
+
+<%@ Register Assembly="FredCK.FCKeditorV2" Namespace="FredCK.FCKeditorV2" TagPrefix="FCKeditorV2" %>

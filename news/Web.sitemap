@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/admin/HomeAdmin.aspx" title="后台管理"  description="">
+    <siteMapNode url="" title="会员管理"  description="">
+      <siteMapNode url="~/admin/User.aspx" title="管理注册会员"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="管理员管理"  description="">
+      <siteMapNode url="~/admin/Admin.aspx" title="管理管理员"  description="" />
+      <siteMapNode url="~/admin/AdminAdd.aspx" title="添加管理员"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="友情链接管理"  description="">
+      <siteMapNode url="~/admin/FriendLinkAdd.aspx" title="添加友情链接"  description="" />
+      <siteMapNode url="~/admin/FriendLink.aspx" title="管理友情链接"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="新闻管理"  description="">
+      <siteMapNode url="~/admin/NewsAdd.aspx" title="添加新闻"  description="" />
+      <siteMapNode url="~/admin/NewsEdit.aspx" title="编辑新闻"  description="" />
+      <siteMapNode url="~/admin/NewsAddFckeditor.aspx" title="加新闻Fckeditor"  description="" />
+      <siteMapNode url="~/admin/NewsEditFckeditor.aspx" title="改新闻Fckeditor"  description="" />      
+    </siteMapNode>
+    <siteMapNode url="" title="新闻审核"  description="">
+      <siteMapNode url="~/admin/NewsAudit.aspx" title="审核新闻"  description="" />
+      <siteMapNode url="~/admin/NewsCategory.aspx" title="管理新闻类别"  description="" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

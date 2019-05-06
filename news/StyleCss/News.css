@@ -1,0 +1,187 @@
+﻿/*各网页的公共部分CSS*/
+/*<!--*《ASP.NET数据库网站设计教程（C#版）第2版》配套教学资源-刘瑞新主编-电子工业出版社2015.1 可以自由使用，但请不要删除本标志，引用请注明出处*-->*/
+/*基本信息*/
+body
+{
+    font-size: 14px;
+    font-family: 宋体, 'Amarante' , cursive; /*background-color: #fcfcba; 背景色为淡黄色，,调试用，完成后最好删掉*/
+    text-align: left;
+    padding: 0;
+    margin: 0px;
+}
+
+/*页面层容器，整个外框居中显示--------------------------------------------------开始---*/
+#container
+{
+    /*background: #e7f2fb;背景为淡蓝色*/
+    width: 960px; /*只在此处设定网页宽度*/
+    margin: 0 auto;
+}
+/*页面层容器，整个外框居中显示--------------------------------------------------结束---*/
+/*最顶端区域--------------------------------------------------开始------*/
+#top
+{
+    width: 960px;
+    height: 23px;
+    color: #666666;
+    background-color: #ECF1F5;
+}
+#top-left
+{
+    float: left;
+    width: 180px;
+    line-height: 20px;
+    text-align: left;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+#top-right
+{
+    float: right;
+    width: 120px;
+    line-height: 20px;
+    padding-top: 3px;
+}
+/*最顶端区域----------------------------------------------------结束----*/
+/*页面头部LOGO--------------------------------------------------开始----*/
+#header
+{
+    clear: both;
+    height: 80px;
+    background: #FFCC99;
+    background: url('../Images/logo.jpg') no-repeat; /*加入标题中的背景图片*/
+    border: 1px solid #72cfd7; /*画浅蓝色实线*/
+    margin-bottom: 10px;
+}
+/*页面头部LOGO--------------------------------------------------结束----*/
+/*菜单导航区----------------------------------------------------开始---*/
+#nav
+{
+    height: 25px;
+    text-align: left;
+    padding: 5px 0px 0px 0px;
+    background-image: url('../Images/bg_menu.png');
+    border: 1px solid #72cfd7; /*四边为1px蓝色线*/
+    margin-bottom: 10px;
+}
+/*菜单导航区----------------------------------------------------结束---*/
+/*页面主体------------------------------------------------------开始---*/
+/*主体部分的外框------------------------------------------开始---*/
+#content
+{
+    float: left; /*非常重要，不可少。缺少则造成其包含的DIV块不能包含在本块中*/
+    min-height: 180px;
+    background: #e7f2fb; /*背景为淡蓝色*/
+    border: 1px solid #72cfd7; /*四边为1px蓝色线*/
+    width: 954px;
+    padding: 2px 2px 2px 2px;
+    margin-bottom: 6px;
+}
+/*主体部分的外框------------------------------------------------结束---*/
+/*页面底部------------------------------------------------------开始---*/
+#footer
+{
+    margin-top: 10px; /*脚部与主内容垂直间距，可自行修改*/
+    clear: both;
+    padding: 5px 0px 5px 0px;
+    background-image: url('Images/bg_footer.png');
+    background-color: #EAF6FF;
+    text-align: center;
+    border: 1px solid #72cfd7; /*画浅蓝色实线*/
+}
+/*页面底部------------------------------------------------------结束---*/
+/*nav导航区中的菜单----------------------------------开始---*/
+#nav ul
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+#nav ul li
+{
+    display: block;
+    width: 96px;
+    padding-left: 20px;
+    padding-top: 3px;
+    float: left;
+}
+#nav ul li a
+{
+    color: #000;
+    text-decoration: none;
+}
+#nav ul li a:hover
+{
+    color: #065fb9;
+}
+#nav ul li a:active
+{
+    color: #FDFDE0;
+}
+/*导航区菜单----------------------------------结束---*/
+
+/*基本元素的设置------------------------------开始---*/
+/*链接的颜色*/
+a:link
+{
+    color: #000;
+    text-decoration: none;
+}
+/*已经访问过的颜色*/
+a:visited
+{
+    color: #000;
+    text-decoration: none;
+}
+/*鼠标经过的颜色*/
+a:hover
+{
+    color: #ff8000;
+    text-decoration: underline;
+}
+.button
+{
+    font-size: 100%;
+    width: 56px;
+}
+img
+{
+    border-style: none;
+}
+/*表格居中*/
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+/*表格的左侧列*/
+.td_left
+{
+    width: 40%;
+    text-align: right;
+}
+
+/*表格的右侧列*/
+.td_right
+{
+    text-align: left;
+}
+/*表格内容居中*/
+.td_center
+{
+    text-align: center;
+}
+
+/*单元格内容居右*/
+.tdright
+{
+    width: 30%;
+    text-align: right;
+}
+/*单元格内容居左*/
+.tdleft
+{
+    text-align: left;
+}
+
+/*基本元素的设置------------------------------结束---*/
